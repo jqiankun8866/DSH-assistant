@@ -6,5 +6,5 @@
 
 
 
-基础表情素材：内置12张 Twemoji 静态PNG及中文关键词检索，安装时自动准备到当前微信工作区。先测试“发一个比心的表情包”；也可说“谢谢”测试轻量主动配图，高频模式不限制连续轮数，已发图时不重复。说“不要发表情包”可停止主动配图。现版表情通过语义候选与专用发送工具处理，仅渠道确认后记为发送成功。
-素材：Twemoji v15.1.0，Twitter, Inc. and other contributors，CC BY 4.0；图片未修改，仅添加中文检索标签。来源 https://github.com/jdecked/twemoji/tree/v15.1.0 。完整许可证与署名随 packages/wechat-channel/assets/memes/basic 分发。
+默认表情库：26 张戴眼镜秘书大肥鱼 AI 表情，另有 1 张额度不足专用图；安装时自动准备。来源记录见 packages/wechat-channel/assets/memes/basic/ATTRIBUTION.md。
+默认表情库：26 张戴眼镜秘书大肥鱼 AI 表情，另有 1 张额度不足专用图；安装时自动准备。来源记录见 packages/wechat-channel/assets/memes/basic/ATTRIBUTION.md。

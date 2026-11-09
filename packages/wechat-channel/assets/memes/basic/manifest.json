@@ -1,162 +1,1130 @@
 {
   "id": "assistant-basic-v1",
-  "license": "CC-BY-4.0",
-  "source": "https://github.com/jdecked/twemoji/tree/v15.1.0",
+  "version": "secretary-1",
+  "name": "戴眼镜秘书大肥鱼",
+  "license": "NOASSERTION",
+  "generatedBy": "OpenAI image_gen",
+  "legacyFiles": {
+    "heart.png": "68da7c6dc7d9c0456174f2575abe8f8abd52cde7a4017700579519173a8a4a34",
+    "ok.png": "0b94da70454fffda13f6062f51a6c4772c8854be2a963da23b4298c5fb11ef56",
+    "thumbs-up.png": "42b43325b3edacba2a0e72b742bdc6fc5e4bc2ad38adca271fcc6d8353639887",
+    "wave.png": "dfee1561c6e59c90f7a292f90157bae85f75ccb3ae27b655898a51429e3a8910",
+    "laugh.png": "c252a58367211c11d839155e50dc5e98551826c64b8d2e8d6267124c054ceae0",
+    "happy.png": "ae89e05450587e8f1f4786c0d266cf94ef2b306782fb6f9c30e43c0023ed148b",
+    "think.png": "5116f7d07677f06785887c0af23c189b541a306d6b792d605ffaf3ed9f0e912d",
+    "hug.png": "75051001faed2bddddb6c9e67ee6b62f4f6e72395d2effcaa017bd4e6970b29f",
+    "celebrate.png": "7289a4aa98f9a81a1108f98abfcebd214dab96df64c8ea67ed6e83116a8e4ce8",
+    "sleep.png": "2aeea8badccceed72027d37081ac75d81ced2932c382ed89527d427585081df7",
+    "awkward.png": "723bceeff120314bc0b84d09adc1fa250a25361d04ff700964fdee58819b20cd",
+    "surprise.png": "488c8e360097e4d5240e3cc712abb1e6108eabac2aa37cf261444cdd83c1970a"
+  },
   "items": [
     {
-      "id": "heart",
-      "title": "比心",
+      "id": "angry-shengqi",
+      "file": "angry-shengqi.png",
+      "title": "生气",
+      "sha256": "4eefb160503c6c37b80a7e15218c9c57fff249d39e7b8fc77232e5fa9184e72e",
       "tags": [
-        "比心",
-        "爱你",
-        "喜欢",
-        "谢谢",
-        "感谢"
+        "生气",
+        "秘书大肥鱼"
       ],
-      "file": "heart.png",
-      "url": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/72x72/2764.png",
-      "sha256": "68da7c6dc7d9c0456174f2575abe8f8abd52cde7a4017700579519173a8a4a34"
+      "semantic": {
+        "version": 1,
+        "usable": true,
+        "confidence": 0.95,
+        "text": "",
+        "meaning": "抱臂鼓脸，表达玩笑式不满",
+        "when": "用于日常闲聊中表达生气；按具体语境选择",
+        "intents": [
+          "吐槽"
+        ],
+        "emotions": [
+          "生气"
+        ],
+        "styles": [
+          "可爱",
+          "俏皮"
+        ],
+        "scenes": [
+          "日常闲聊"
+        ],
+        "intensity": 2,
+        "target": "自己",
+        "avoid": [
+          "真实痛苦",
+          "严肃健康",
+          "冲突"
+        ],
+        "keywords": [
+          "生气",
+          "秘书大肥鱼"
+        ]
+      },
+      "systemOnly": false
     },
     {
-      "id": "ok",
-      "title": "收到",
+      "id": "baka-xianqi",
+      "file": "baka-xianqi.png",
+      "title": "嫌弃",
+      "sha256": "5577dcf86b64efa0c9bee7cdc950084718894ec87501cfaed51f8865138b84bf",
       "tags": [
-        "收到",
-        "好的",
-        "ok",
-        "没问题",
-        "不客气"
+        "嫌弃",
+        "秘书大肥鱼"
       ],
-      "file": "ok.png",
-      "url": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/72x72/1f44c.png",
-      "sha256": "0b94da70454fffda13f6062f51a6c4772c8854be2a963da23b4298c5fb11ef56"
+      "semantic": {
+        "version": 1,
+        "usable": true,
+        "confidence": 0.95,
+        "text": "",
+        "meaning": "半眯眼摆手，表达调侃式嫌弃",
+        "when": "用于日常闲聊中表达嫌弃；按具体语境选择",
+        "intents": [
+          "调侃"
+        ],
+        "emotions": [
+          "嫌弃"
+        ],
+        "styles": [
+          "可爱",
+          "俏皮"
+        ],
+        "scenes": [
+          "日常闲聊"
+        ],
+        "intensity": 2,
+        "target": "自己",
+        "avoid": [
+          "真实痛苦",
+          "严肃健康",
+          "冲突"
+        ],
+        "keywords": [
+          "嫌弃",
+          "秘书大肥鱼"
+        ]
+      },
+      "systemOnly": false
     },
     {
-      "id": "thumbs-up",
-      "title": "点赞",
+      "id": "color-huachi",
+      "file": "color-huachi.png",
+      "title": "花痴",
+      "sha256": "03894067518a35b8e8bf988cd2f3517c519164c7db648cb3598ccd0dfaf3ced2",
       "tags": [
-        "点赞",
-        "厉害",
-        "干得好",
-        "加油"
+        "花痴",
+        "秘书大肥鱼"
       ],
-      "file": "thumbs-up.png",
-      "url": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/72x72/1f44d.png",
-      "sha256": "42b43325b3edacba2a0e72b742bdc6fc5e4bc2ad38adca271fcc6d8353639887"
+      "semantic": {
+        "version": 1,
+        "usable": true,
+        "confidence": 0.95,
+        "text": "",
+        "meaning": "爱心眼捧脸，表达喜欢和赞叹",
+        "when": "用于日常闲聊中表达花痴；按具体语境选择",
+        "intents": [
+          "赞赏"
+        ],
+        "emotions": [
+          "喜爱"
+        ],
+        "styles": [
+          "可爱",
+          "俏皮"
+        ],
+        "scenes": [
+          "日常闲聊"
+        ],
+        "intensity": 2,
+        "target": "自己",
+        "avoid": [],
+        "keywords": [
+          "花痴",
+          "秘书大肥鱼"
+        ]
+      },
+      "systemOnly": false
     },
     {
-      "id": "wave",
-      "title": "打招呼",
+      "id": "confused-jiazai",
+      "file": "confused-jiazai.png",
+      "title": "思考中",
+      "sha256": "65b47c1899b2ee81f499f9a56901fef2dec758b3d007af8d2930a03ccfe4cd5a",
       "tags": [
-        "你好",
-        "早上好",
-        "拜拜",
-        "打招呼"
+        "思考中",
+        "秘书大肥鱼"
       ],
-      "file": "wave.png",
-      "url": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/72x72/1f44b.png",
-      "sha256": "dfee1561c6e59c90f7a292f90157bae85f75ccb3ae27b655898a51429e3a8910"
+      "semantic": {
+        "version": 1,
+        "usable": true,
+        "confidence": 0.95,
+        "text": "",
+        "meaning": "手指抵唇和加载圆点，正在思考或等待",
+        "when": "用于等待催促中表达思考中；按具体语境选择",
+        "intents": [
+          "等待"
+        ],
+        "emotions": [
+          "好奇"
+        ],
+        "styles": [
+          "可爱",
+          "俏皮"
+        ],
+        "scenes": [
+          "等待催促"
+        ],
+        "intensity": 2,
+        "target": "自己",
+        "avoid": [],
+        "keywords": [
+          "思考中",
+          "秘书大肥鱼"
+        ]
+      },
+      "systemOnly": false
+    },
+    {
+      "id": "confused-wenhao",
+      "file": "confused-wenhao.png",
+      "title": "疑问",
+      "sha256": "12fbeebccd9c74b0e782cc4a92c0363655f256d5001c9093138cd607ed03a8c5",
+      "tags": [
+        "疑问",
+        "秘书大肥鱼"
+      ],
+      "semantic": {
+        "version": 1,
+        "usable": true,
+        "confidence": 0.95,
+        "text": "",
+        "meaning": "歪头和问号，表示疑惑想了解",
+        "when": "用于日常闲聊中表达疑问；按具体语境选择",
+        "intents": [
+          "疑惑"
+        ],
+        "emotions": [
+          "疑惑"
+        ],
+        "styles": [
+          "可爱",
+          "俏皮"
+        ],
+        "scenes": [
+          "日常闲聊"
+        ],
+        "intensity": 2,
+        "target": "自己",
+        "avoid": [],
+        "keywords": [
+          "疑问",
+          "秘书大肥鱼"
+        ]
+      },
+      "systemOnly": false
+    },
+    {
+      "id": "cpu-jiaban",
+      "file": "cpu-jiaban.png",
+      "title": "加班",
+      "sha256": "54415710d38bcdf6f875329270573d49c0e75602b2dc47dac6f6bbbbb731b864",
+      "tags": [
+        "加班",
+        "秘书大肥鱼"
+      ],
+      "semantic": {
+        "version": 1,
+        "usable": true,
+        "confidence": 0.95,
+        "text": "",
+        "meaning": "抱电脑喝咖啡，疲惫但仍在工作",
+        "when": "用于工作中表达加班；按具体语境选择",
+        "intents": [
+          "自嘲"
+        ],
+        "emotions": [
+          "疲惫"
+        ],
+        "styles": [
+          "可爱",
+          "俏皮"
+        ],
+        "scenes": [
+          "工作"
+        ],
+        "intensity": 2,
+        "target": "自己",
+        "avoid": [],
+        "keywords": [
+          "加班",
+          "秘书大肥鱼"
+        ]
+      },
+      "systemOnly": false
+    },
+    {
+      "id": "daily-ganfan",
+      "file": "daily-ganfan.png",
+      "title": "干饭",
+      "sha256": "e2be2ca85e127a1003819b85c1d3bd260644cce24971a4284ef004862af14924",
+      "tags": [
+        "干饭",
+        "秘书大肥鱼"
+      ],
+      "semantic": {
+        "version": 1,
+        "usable": true,
+        "confidence": 0.95,
+        "text": "",
+        "meaning": "端着米饭和筷子，开心准备吃饭",
+        "when": "用于饮食中表达干饭；按具体语境选择",
+        "intents": [
+          "表达状态"
+        ],
+        "emotions": [
+          "开心"
+        ],
+        "styles": [
+          "可爱",
+          "俏皮"
+        ],
+        "scenes": [
+          "饮食"
+        ],
+        "intensity": 2,
+        "target": "自己",
+        "avoid": [],
+        "keywords": [
+          "干饭",
+          "秘书大肥鱼"
+        ]
+      },
+      "systemOnly": false
+    },
+    {
+      "id": "fool-buyao",
+      "file": "fool-buyao.png",
+      "title": "不要",
+      "sha256": "c28a9970799f66a2a258a90b6be3c5931f3ce09d185293ae727874d28de1d6d9",
+      "tags": [
+        "不要",
+        "秘书大肥鱼"
+      ],
+      "semantic": {
+        "version": 1,
+        "usable": true,
+        "confidence": 0.95,
+        "text": "",
+        "meaning": "双臂交叉拒绝，闭眼鼓脸",
+        "when": "用于日常闲聊中表达不要；按具体语境选择",
+        "intents": [
+          "拒绝"
+        ],
+        "emotions": [
+          "不满"
+        ],
+        "styles": [
+          "可爱",
+          "俏皮"
+        ],
+        "scenes": [
+          "日常闲聊"
+        ],
+        "intensity": 2,
+        "target": "自己",
+        "avoid": [
+          "真实痛苦",
+          "严肃健康",
+          "冲突"
+        ],
+        "keywords": [
+          "不要",
+          "秘书大肥鱼"
+        ]
+      },
+      "systemOnly": false
+    },
+    {
+      "id": "givemoney-yaoqian",
+      "file": "givemoney-yaoqian.png",
+      "title": "求打赏",
+      "sha256": "f6bb1edb375daf2fbdce48f23fa37e05e706d11c3ba12c1a83628cbcdf8f1107",
+      "tags": [
+        "求打赏",
+        "秘书大肥鱼"
+      ],
+      "semantic": {
+        "version": 1,
+        "usable": true,
+        "confidence": 0.95,
+        "text": "",
+        "meaning": "双手捧零钱包，期待打赏或零花钱",
+        "when": "用于购物花钱中表达求打赏；按具体语境选择",
+        "intents": [
+          "请求"
+        ],
+        "emotions": [
+          "期待"
+        ],
+        "styles": [
+          "可爱",
+          "俏皮"
+        ],
+        "scenes": [
+          "购物花钱"
+        ],
+        "intensity": 2,
+        "target": "自己",
+        "avoid": [],
+        "keywords": [
+          "求打赏",
+          "秘书大肥鱼"
+        ]
+      },
+      "systemOnly": false
     },
     {
       "id": "laugh",
-      "title": "笑哭",
+      "file": "laugh.png",
+      "title": "得意",
+      "sha256": "604036ec01db2483eea70bb0140a6a94fd5513393e382b6ce6c72e25379ae4ca",
       "tags": [
+        "得意",
+        "秘书大肥鱼",
         "哈哈",
         "笑死",
-        "笑哭",
         "好笑"
       ],
-      "file": "laugh.png",
-      "url": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/72x72/1f602.png",
-      "sha256": "c252a58367211c11d839155e50dc5e98551826c64b8d2e8d6267124c054ceae0"
+      "semantic": {
+        "version": 1,
+        "usable": true,
+        "confidence": 0.95,
+        "text": "",
+        "meaning": "闭眼得意笑，叉腰表示小骄傲",
+        "when": "用于日常闲聊中表达得意；按具体语境选择",
+        "intents": [
+          "炫耀"
+        ],
+        "emotions": [
+          "得意"
+        ],
+        "styles": [
+          "可爱",
+          "俏皮"
+        ],
+        "scenes": [
+          "日常闲聊"
+        ],
+        "intensity": 2,
+        "target": "自己",
+        "avoid": [
+          "真实痛苦",
+          "严肃健康",
+          "冲突"
+        ],
+        "keywords": [
+          "得意",
+          "秘书大肥鱼"
+        ]
+      },
+      "systemOnly": false
     },
     {
-      "id": "happy",
-      "title": "开心",
+      "id": "ok",
+      "file": "ok.png",
+      "title": "收到老大",
+      "sha256": "b9db261ed1202314e152e8b050e4c5adb1f47d5bffa0551ae690c9ae0f881c32",
       "tags": [
-        "开心",
-        "高兴",
-        "快乐"
+        "收到老大",
+        "秘书大肥鱼",
+        "收到",
+        "好的",
+        "ok",
+        "不客气"
       ],
-      "file": "happy.png",
-      "url": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/72x72/1f604.png",
-      "sha256": "ae89e05450587e8f1f4786c0d266cf94ef2b306782fb6f9c30e43c0023ed148b"
-    },
-    {
-      "id": "think",
-      "title": "思考",
-      "tags": [
-        "思考",
-        "疑问",
-        "疑惑",
-        "想想"
-      ],
-      "file": "think.png",
-      "url": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/72x72/1f914.png",
-      "sha256": "5116f7d07677f06785887c0af23c189b541a306d6b792d605ffaf3ed9f0e912d"
-    },
-    {
-      "id": "hug",
-      "title": "抱抱",
-      "tags": [
-        "抱抱",
-        "安慰",
-        "辛苦",
-        "温暖"
-      ],
-      "file": "hug.png",
-      "url": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/72x72/1f917.png",
-      "sha256": "75051001faed2bddddb6c9e67ee6b62f4f6e72395d2effcaa017bd4e6970b29f"
+      "semantic": {
+        "version": 1,
+        "usable": true,
+        "confidence": 0.95,
+        "text": "收到，老大！",
+        "meaning": "竖拇指眨眼，确认收到、明白和答应",
+        "when": "用于工作中表达收到老大；按具体语境选择",
+        "intents": [
+          "回应"
+        ],
+        "emotions": [
+          "开心"
+        ],
+        "styles": [
+          "可爱",
+          "俏皮"
+        ],
+        "scenes": [
+          "工作"
+        ],
+        "intensity": 2,
+        "target": "自己",
+        "avoid": [],
+        "keywords": [
+          "收到老大",
+          "秘书大肥鱼"
+        ]
+      },
+      "systemOnly": false
     },
     {
       "id": "celebrate",
-      "title": "庆祝",
-      "tags": [
-        "庆祝",
-        "完成",
-        "成功",
-        "恭喜"
-      ],
       "file": "celebrate.png",
-      "url": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/72x72/1f389.png",
-      "sha256": "7289a4aa98f9a81a1108f98abfcebd214dab96df64c8ea67ed6e83116a8e4ce8"
+      "title": "飘了",
+      "sha256": "bf0e59f95d9b3420852f50b54264114d4c189b34f5133632978810420e0505e2",
+      "tags": [
+        "飘了",
+        "秘书大肥鱼",
+        "成功",
+        "成功了",
+        "庆祝",
+        "哈哈",
+        "笑死"
+      ],
+      "semantic": {
+        "version": 1,
+        "usable": true,
+        "confidence": 0.95,
+        "text": "",
+        "meaning": "张开双臂飘起来，开心得意忘形",
+        "when": "用于日常闲聊中表达飘了；按具体语境选择",
+        "intents": [
+          "炫耀"
+        ],
+        "emotions": [
+          "得意"
+        ],
+        "styles": [
+          "可爱",
+          "俏皮"
+        ],
+        "scenes": [
+          "日常闲聊"
+        ],
+        "intensity": 2,
+        "target": "自己",
+        "avoid": [
+          "真实痛苦",
+          "严肃健康",
+          "冲突"
+        ],
+        "keywords": [
+          "飘了",
+          "秘书大肥鱼"
+        ]
+      },
+      "systemOnly": false
+    },
+    {
+      "id": "heart",
+      "file": "heart.png",
+      "title": "比心",
+      "sha256": "a29a91f08ccd1959858ce5cc520c2ddfb1be72db2c49b014e25a506ef1d29c19",
+      "tags": [
+        "比心",
+        "秘书大肥鱼",
+        "谢谢",
+        "感谢",
+        "喜欢"
+      ],
+      "semantic": {
+        "version": 1,
+        "usable": true,
+        "confidence": 0.95,
+        "text": "",
+        "meaning": "双手比心，表达喜欢、感谢和亲近",
+        "when": "用于亲友社交中表达比心；按具体语境选择",
+        "intents": [
+          "亲昵"
+        ],
+        "emotions": [
+          "喜爱"
+        ],
+        "styles": [
+          "可爱",
+          "俏皮"
+        ],
+        "scenes": [
+          "亲友社交"
+        ],
+        "intensity": 2,
+        "target": "自己",
+        "avoid": [
+          "关系不熟"
+        ],
+        "keywords": [
+          "比心",
+          "秘书大肥鱼"
+        ]
+      },
+      "systemOnly": false
+    },
+    {
+      "id": "meow-maozhua",
+      "file": "meow-maozhua.png",
+      "title": "猫爪",
+      "sha256": "74764c02efbb8a60c635daee52ec682b6011989fea3420e0e3512915345868fc",
+      "tags": [
+        "猫爪",
+        "秘书大肥鱼"
+      ],
+      "semantic": {
+        "version": 1,
+        "usable": true,
+        "confidence": 0.95,
+        "text": "",
+        "meaning": "双手模仿猫爪，俏皮撒娇",
+        "when": "用于日常闲聊中表达猫爪；按具体语境选择",
+        "intents": [
+          "撒娇"
+        ],
+        "emotions": [
+          "开心"
+        ],
+        "styles": [
+          "可爱",
+          "俏皮"
+        ],
+        "scenes": [
+          "日常闲聊"
+        ],
+        "intensity": 2,
+        "target": "自己",
+        "avoid": [
+          "关系不熟"
+        ],
+        "keywords": [
+          "猫爪",
+          "秘书大肥鱼"
+        ]
+      },
+      "systemOnly": false
+    },
+    {
+      "id": "wave",
+      "file": "wave.png",
+      "title": "打招呼",
+      "sha256": "6de07c0ae6ea551494c942e03eb79704088adef42a6d01879a9493895eb728e6",
+      "tags": [
+        "打招呼",
+        "秘书大肥鱼",
+        "你好",
+        "早上好",
+        "拜拜"
+      ],
+      "semantic": {
+        "version": 1,
+        "usable": true,
+        "confidence": 0.95,
+        "text": "",
+        "meaning": "举手挥手，热情打招呼",
+        "when": "用于早晚作息中表达打招呼；按具体语境选择",
+        "intents": [
+          "问候"
+        ],
+        "emotions": [
+          "开心"
+        ],
+        "styles": [
+          "可爱",
+          "俏皮"
+        ],
+        "scenes": [
+          "早晚作息"
+        ],
+        "intensity": 2,
+        "target": "自己",
+        "avoid": [],
+        "keywords": [
+          "打招呼",
+          "秘书大肥鱼"
+        ]
+      },
+      "systemOnly": false
+    },
+    {
+      "id": "sad-qiurao",
+      "file": "sad-qiurao.png",
+      "title": "求饶",
+      "sha256": "16bda37be6e4e5e3eb1fe842830ef3def3f1ad6afa207131eb40b4616ca9632e",
+      "tags": [
+        "求饶",
+        "秘书大肥鱼"
+      ],
+      "semantic": {
+        "version": 1,
+        "usable": true,
+        "confidence": 0.95,
+        "text": "",
+        "meaning": "含泪握拳，委屈求饶求原谅",
+        "when": "用于日常闲聊中表达求饶；按具体语境选择",
+        "intents": [
+          "求饶"
+        ],
+        "emotions": [
+          "委屈"
+        ],
+        "styles": [
+          "可爱",
+          "俏皮"
+        ],
+        "scenes": [
+          "日常闲聊"
+        ],
+        "intensity": 2,
+        "target": "自己",
+        "avoid": [],
+        "keywords": [
+          "求饶",
+          "秘书大肥鱼"
+        ]
+      },
+      "systemOnly": false
+    },
+    {
+      "id": "sad-yun",
+      "file": "sad-yun.png",
+      "title": "晕了",
+      "sha256": "20ad5f39d2df2deffb1ea069676ed14b2a8566ac5e0f572aa677c543dad4ac3c",
+      "tags": [
+        "晕了",
+        "秘书大肥鱼"
+      ],
+      "semantic": {
+        "version": 1,
+        "usable": true,
+        "confidence": 0.95,
+        "text": "",
+        "meaning": "螺旋眼抱脸，表示头昏和信息过载",
+        "when": "用于自我状态中表达晕了；按具体语境选择",
+        "intents": [
+          "表达状态"
+        ],
+        "emotions": [
+          "崩溃"
+        ],
+        "styles": [
+          "可爱",
+          "俏皮"
+        ],
+        "scenes": [
+          "自我状态"
+        ],
+        "intensity": 2,
+        "target": "自己",
+        "avoid": [],
+        "keywords": [
+          "晕了",
+          "秘书大肥鱼"
+        ]
+      },
+      "systemOnly": false
+    },
+    {
+      "id": "see-zhenjing",
+      "file": "see-zhenjing.png",
+      "title": "震惊",
+      "sha256": "a6cf96b1d13a4fb3111d2200dfd4338c9dcfafcddbc25f4bbf05ae1f0211cab0",
+      "tags": [
+        "震惊",
+        "秘书大肥鱼"
+      ],
+      "semantic": {
+        "version": 1,
+        "usable": true,
+        "confidence": 0.95,
+        "text": "",
+        "meaning": "双臂举起瞪眼张嘴，惊讶到跳起",
+        "when": "用于突发状况中表达震惊；按具体语境选择",
+        "intents": [
+          "惊叹"
+        ],
+        "emotions": [
+          "震惊"
+        ],
+        "styles": [
+          "可爱",
+          "俏皮"
+        ],
+        "scenes": [
+          "突发状况"
+        ],
+        "intensity": 2,
+        "target": "自己",
+        "avoid": [],
+        "keywords": [
+          "震惊",
+          "秘书大肥鱼"
+        ]
+      },
+      "systemOnly": false
+    },
+    {
+      "id": "shy-haixiu",
+      "file": "shy-haixiu.png",
+      "title": "害羞",
+      "sha256": "f1036eb486be14b7c366c8a7f5b6377e1b282742d2206c5905e2b42b0f16af1c",
+      "tags": [
+        "害羞",
+        "秘书大肥鱼"
+      ],
+      "semantic": {
+        "version": 1,
+        "usable": true,
+        "confidence": 0.95,
+        "text": "",
+        "meaning": "捂脸脸红，害羞不好意思",
+        "when": "用于亲友社交中表达害羞；按具体语境选择",
+        "intents": [
+          "表达状态"
+        ],
+        "emotions": [
+          "害羞"
+        ],
+        "styles": [
+          "可爱",
+          "俏皮"
+        ],
+        "scenes": [
+          "亲友社交"
+        ],
+        "intensity": 2,
+        "target": "自己",
+        "avoid": [],
+        "keywords": [
+          "害羞",
+          "秘书大肥鱼"
+        ]
+      },
+      "systemOnly": false
+    },
+    {
+      "id": "shy-toukan",
+      "file": "shy-toukan.png",
+      "title": "偷看",
+      "sha256": "99837459327edc1e59fc8130181f0dd93b26d5c3a5ee479c0cb1375b0a91afb9",
+      "tags": [
+        "偷看",
+        "秘书大肥鱼"
+      ],
+      "semantic": {
+        "version": 1,
+        "usable": true,
+        "confidence": 0.95,
+        "text": "",
+        "meaning": "躲在鲸鱼尾巴后偷偷看，害羞又好奇",
+        "when": "用于日常闲聊中表达偷看；按具体语境选择",
+        "intents": [
+          "围观"
+        ],
+        "emotions": [
+          "好奇"
+        ],
+        "styles": [
+          "可爱",
+          "俏皮"
+        ],
+        "scenes": [
+          "日常闲聊"
+        ],
+        "intensity": 2,
+        "target": "自己",
+        "avoid": [],
+        "keywords": [
+          "偷看",
+          "秘书大肥鱼"
+        ]
+      },
+      "systemOnly": false
+    },
+    {
+      "id": "sigh-wuyu",
+      "file": "sigh-wuyu.png",
+      "title": "无语",
+      "sha256": "3bdcce2285a6c56159e3b95c2519357c7a38dfe9d71e6147be0410aabae7b764",
+      "tags": [
+        "无语",
+        "秘书大肥鱼"
+      ],
+      "semantic": {
+        "version": 1,
+        "usable": true,
+        "confidence": 0.95,
+        "text": "",
+        "meaning": "半眯眼流汗，表达无语和无奈",
+        "when": "用于日常闲聊中表达无语；按具体语境选择",
+        "intents": [
+          "吐槽"
+        ],
+        "emotions": [
+          "无语"
+        ],
+        "styles": [
+          "可爱",
+          "俏皮"
+        ],
+        "scenes": [
+          "日常闲聊"
+        ],
+        "intensity": 2,
+        "target": "自己",
+        "avoid": [
+          "真实痛苦",
+          "严肃健康",
+          "冲突"
+        ],
+        "keywords": [
+          "无语",
+          "秘书大肥鱼"
+        ]
+      },
+      "systemOnly": false
     },
     {
       "id": "sleep",
-      "title": "晚安",
-      "tags": [
-        "晚安",
-        "睡觉",
-        "困了",
-        "休息"
-      ],
       "file": "sleep.png",
-      "url": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/72x72/1f634.png",
-      "sha256": "2aeea8badccceed72027d37081ac75d81ced2932c382ed89527d427585081df7"
+      "title": "睡觉",
+      "sha256": "8beff1ff3a24db0bf1d9c1b66c7399f2b27fa76523e0e3ba99a944b515edca39",
+      "tags": [
+        "睡觉",
+        "秘书大肥鱼",
+        "晚安",
+        "困了"
+      ],
+      "semantic": {
+        "version": 1,
+        "usable": true,
+        "confidence": 0.95,
+        "text": "",
+        "meaning": "抱鲸鱼抱枕闭眼睡觉，困了晚安",
+        "when": "用于早晚作息中表达睡觉；按具体语境选择",
+        "intents": [
+          "告别"
+        ],
+        "emotions": [
+          "平静"
+        ],
+        "styles": [
+          "可爱",
+          "俏皮"
+        ],
+        "scenes": [
+          "早晚作息"
+        ],
+        "intensity": 2,
+        "target": "自己",
+        "avoid": [],
+        "keywords": [
+          "睡觉",
+          "秘书大肥鱼"
+        ]
+      },
+      "systemOnly": false
     },
     {
-      "id": "awkward",
-      "title": "尴尬",
+      "id": "surprised-xia",
+      "file": "surprised-xia.png",
+      "title": "吓到",
+      "sha256": "6372f16df03ad022fe08d56f34ce0ea14608e9a7259922c536f2188e9f44e0c1",
       "tags": [
-        "尴尬",
-        "汗",
-        "不好意思"
+        "吓到",
+        "秘书大肥鱼"
       ],
-      "file": "awkward.png",
-      "url": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/72x72/1f605.png",
-      "sha256": "723bceeff120314bc0b84d09adc1fa250a25361d04ff700964fdee58819b20cd"
+      "semantic": {
+        "version": 1,
+        "usable": true,
+        "confidence": 0.95,
+        "text": "",
+        "meaning": "闭眼惊叫握拳，表示受到惊吓",
+        "when": "用于突发状况中表达吓到；按具体语境选择",
+        "intents": [
+          "惊叹"
+        ],
+        "emotions": [
+          "害怕"
+        ],
+        "styles": [
+          "可爱",
+          "俏皮"
+        ],
+        "scenes": [
+          "突发状况"
+        ],
+        "intensity": 2,
+        "target": "自己",
+        "avoid": [],
+        "keywords": [
+          "吓到",
+          "秘书大肥鱼"
+        ]
+      },
+      "systemOnly": false
     },
     {
-      "id": "surprise",
-      "title": "惊讶",
+      "id": "work-tangping",
+      "file": "work-tangping.png",
+      "title": "躺平",
+      "sha256": "298c18a26b3892271bbdd87304c2a94200ea5d69d19f5c5b58cd9f231f789f6b",
       "tags": [
-        "惊讶",
-        "震惊",
-        "哇"
+        "躺平",
+        "秘书大肥鱼"
       ],
-      "file": "surprise.png",
-      "url": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/72x72/1f632.png",
-      "sha256": "488c8e360097e4d5240e3cc712abb1e6108eabac2aa37cf261444cdd83c1970a"
+      "semantic": {
+        "version": 1,
+        "usable": true,
+        "confidence": 0.95,
+        "text": "",
+        "meaning": "趴着托腮，无精打采想休息",
+        "when": "用于工作中表达躺平；按具体语境选择",
+        "intents": [
+          "摆烂"
+        ],
+        "emotions": [
+          "疲惫"
+        ],
+        "styles": [
+          "可爱",
+          "俏皮"
+        ],
+        "scenes": [
+          "工作"
+        ],
+        "intensity": 2,
+        "target": "自己",
+        "avoid": [],
+        "keywords": [
+          "躺平",
+          "秘书大肥鱼"
+        ]
+      },
+      "systemOnly": false
+    },
+    {
+      "id": "special-not-fat",
+      "file": "special-not-fat.png",
+      "title": "才不是大肥鱼",
+      "sha256": "8ba5f795a11a5d05c1cc709dacbffa56ec01fd605a06c3d6035cdff13de970de",
+      "tags": [
+        "才不是大肥鱼",
+        "秘书大肥鱼"
+      ],
+      "semantic": {
+        "version": 1,
+        "usable": true,
+        "confidence": 0.95,
+        "text": "才不是大肥鱼！",
+        "meaning": "鼓脸抱臂，玩笑式否认大肥鱼称呼",
+        "when": "用于日常闲聊中表达才不是大肥鱼；按具体语境选择",
+        "intents": [
+          "否认"
+        ],
+        "emotions": [
+          "不满"
+        ],
+        "styles": [
+          "可爱",
+          "俏皮"
+        ],
+        "scenes": [
+          "日常闲聊"
+        ],
+        "intensity": 2,
+        "target": "自己",
+        "avoid": [
+          "真实痛苦",
+          "严肃健康",
+          "冲突"
+        ],
+        "keywords": [
+          "才不是大肥鱼",
+          "秘书大肥鱼"
+        ]
+      },
+      "systemOnly": false
+    },
+    {
+      "id": "special-token-snack",
+      "file": "special-token-snack.png",
+      "title": "再来一口Token",
+      "sha256": "4f99316c9b00467dbf605f730c6c84208ac88be64d602ed6e803ec1101a42223",
+      "tags": [
+        "再来一口Token",
+        "秘书大肥鱼"
+      ],
+      "semantic": {
+        "version": 1,
+        "usable": true,
+        "confidence": 0.95,
+        "text": "再来一口Token",
+        "meaning": "吃Token饼干，贪吃撒娇想再吃一口",
+        "when": "用于日常闲聊中表达再来一口Token；按具体语境选择",
+        "intents": [
+          "撒娇"
+        ],
+        "emotions": [
+          "开心"
+        ],
+        "styles": [
+          "可爱",
+          "俏皮"
+        ],
+        "scenes": [
+          "日常闲聊"
+        ],
+        "intensity": 2,
+        "target": "自己",
+        "avoid": [
+          "关系不熟"
+        ],
+        "keywords": [
+          "再来一口Token",
+          "秘书大肥鱼"
+        ]
+      },
+      "systemOnly": false
+    },
+    {
+      "id": "system-quota-empty",
+      "file": "system-quota-empty.png",
+      "title": "没米了",
+      "sha256": "be53d2abb1a6a4ece9685dd7c3499977c65e85b48799c5214a8c33533af73838",
+      "tags": [
+        "没米了",
+        "秘书大肥鱼"
+      ],
+      "semantic": {
+        "version": 1,
+        "usable": true,
+        "confidence": 0.95,
+        "text": "没米了… Token 用完啦",
+        "meaning": "端空碗和空Token袋，表示模型额度耗尽",
+        "when": "用于自我状态中表达没米了；按具体语境选择",
+        "intents": [
+          "表达状态"
+        ],
+        "emotions": [
+          "委屈"
+        ],
+        "styles": [
+          "可爱",
+          "俏皮"
+        ],
+        "scenes": [
+          "自我状态"
+        ],
+        "intensity": 2,
+        "target": "自己",
+        "avoid": [],
+        "keywords": [
+          "没米了",
+          "秘书大肥鱼"
+        ]
+      },
+      "systemOnly": true
     }
   ]
 }

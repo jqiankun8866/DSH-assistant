@@ -1,4 +1,4 @@
-import {existsSync,readFileSync,writeFileSync,mkdirSync,copyFileSync,realpathSync,statSync,readdirSync} from 'node:fs';
+import {existsSync,readFileSync,writeFileSync,mkdirSync,copyFileSync,realpathSync,statSync,readdirSync,unlinkSync} from 'node:fs';
 import {join,relative,isAbsolute} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
@@ -11,9 +11,10 @@ export function disableBasicMemePack(workspace){saveState(workspace,{installed:t
 export function ensureMemeLibrary(workspace,source=bundled){
  const root=join(workspace,'memes','assistant-basic-v1'),state=readState(workspace);
  if(state.disabled)return null;
- if(state.installed)return existsSync(join(root,'manifest.json'))?root:null;
+ const incoming=JSON.parse(readFileSync(join(source,'manifest.json'),'utf8'));
+ if(state.installed&&(!existsSync(join(root,'manifest.json'))||state.packVersion===incoming.version))return existsSync(join(root,'manifest.json'))?root:null;
  // Adopt an older installation without restoring files the user removed.
- if(existsSync(join(root,'manifest.json'))){saveState(workspace,{installed:true,disabled:false});return root;}
+ if(existsSync(join(root,'manifest.json'))&&JSON.parse(readFileSync(join(root,'manifest.json'),'utf8')).version===incoming.version){saveState(workspace,{installed:true,disabled:false,packVersion:incoming.version});return root;}
  if(!existsSync(join(source,'manifest.json')))return null;
  const manifest=JSON.parse(readFileSync(join(source,'manifest.json'),'utf8'));
  const files=manifest.items.map(item=>{
@@ -21,8 +22,9 @@ export function ensureMemeLibrary(workspace,source=bundled){
   const bytes=readFileSync(join(source,item.file));if(digest(bytes)!==item.sha256)throw Error('表情资源校验失败');return item.file;
  });
  mkdirSync(root,{recursive:true});
- for(const file of [...files,'manifest.json','ATTRIBUTION.md','LICENSE-CC-BY-4.0.txt'])copyFileSync(join(source,file),join(root,file));
- saveState(workspace,{installed:true,disabled:false});return root;
+ for(const [file,sha] of Object.entries(manifest.legacyFiles??{})){if(/^[a-z0-9-]+\.png$/.test(file)&&existsSync(join(root,file))&&digest(readFileSync(join(root,file)))===sha)unlinkSync(join(root,file));}
+ for(const file of [...files,'manifest.json','ATTRIBUTION.md'])copyFileSync(join(source,file),join(root,file));
+ saveState(workspace,{installed:true,disabled:false,packVersion:manifest.version});return root;
 }
 function safeImage(root,file,sha){
  const canonical=realpathSync(root),candidate=join(root,file);
@@ -37,7 +39,7 @@ export function listMemes(root){
  if(!root||!existsSync(join(root,'manifest.json')))return [];
  const manifest=JSON.parse(readFileSync(join(root,'manifest.json'),'utf8'));
  return (manifest.items??[]).flatMap(item=>{
-  if(!/^[a-z0-9-]+\.(png|jpg|jpeg|webp|gif)$/.test(item.file??'')||typeof item.sha256!=='string')return [];
+  if(item.systemOnly||!/^[a-z0-9-]+\.(png|jpg|jpeg|webp|gif)$/.test(item.file??'')||typeof item.sha256!=='string')return [];
   const verified=safeImage(root,item.file,item.sha256);if(!verified)return [];
   return [{...item,...verified,tags:Array.isArray(item.tags)?item.tags.filter(t=>typeof t==='string'):[],license:item.license??manifest.license}];
  });

@@ -1,6 +1,6 @@
 # 大肥鱼 · DSH 微信私人助理
 
-Windows 开发候选版 **0.1.0**，适配 DeepSeek Harness **0.2.1-rc.5**。保留8个助理技能，移除安卓执行器、梗词库及日记功能。已通过本机自动回归及隔离配置的首次安装/升级测试，尚未完成新Windows机器及本版本真实微信对话验收；见[上传前验收](docs/PREUPLOAD-ACCEPTANCE.md)和[小红书启动验收](docs/XHS-BROWSER-STARTUP.md)。
+Windows 开发候选版 **0.1.1**，适配 DeepSeek Harness **0.2.1-rc.5**。保留8个助理技能，移除安卓执行器、梗词库及日记功能。已通过本机自动回归及隔离配置的首次安装/升级测试，尚未完成新Windows机器及本版本真实微信对话验收；见[上传前验收](docs/PREUPLOAD-ACCEPTANCE.md)和[小红书启动验收](docs/XHS-BROWSER-STARTUP.md)。
 
 通过微信处理日常事务、文件与用户分享的内容，保留称呼和明确偏好。提醒使用 DSH 原生任务，微信和本机控制台共用任务状态。
 
@@ -17,7 +17,7 @@ Windows 开发候选版 **0.1.0**，适配 DeepSeek Harness **0.2.1-rc.5**。保
 - 小红书后台浏览、搜索、笔记图片、收藏/点赞读取；需本人登录专用 Chrome。
 - 表情收集、一次性视觉标注、语义选图、每轮配图及辅助模型用量记录。
 
-基础素材使用随包署名的 Twemoji。**不包含作者的个人图库、小红书采集图片、聊天记录、邮箱凭据和账号登录状态。** 医疗能力不代替医生诊断；投资资料不执行交易。
+默认表情库：26 张戴眼镜秘书大肥鱼 AI 表情，另有 1 张额度不足专用图；安装时自动准备。来源记录见 packages/wechat-channel/assets/memes/basic/ATTRIBUTION.md。
 
 ## 安装：交给 DSH 操作
 

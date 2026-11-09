@@ -1,4 +1,5 @@
-Twemoji graphics by Twitter, Inc. and other contributors, distributed under CC BY 4.0.
-Source: https://github.com/jdecked/twemoji/tree/v15.1.0
-License: https://creativecommons.org/licenses/by/4.0/
-Original PNG graphics are unmodified; filenames and Chinese retrieval tags were added for this package. No endorsement implied.
+# 默认表情库
+
+戴眼镜秘书大肥鱼：本项目经用户确认的 AI 生成图片。26 张日常表情，1 张额度不足专用图。
+
+生成工具：OpenAI image_gen。角色及动作参考来源记录： https://github.com/yyh-001/dsh-meme 及用户提供的两张风格参考图。图片与代码许可分开，不以代码 MIT 许可声明第三方素材权利。

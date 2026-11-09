@@ -88,7 +88,7 @@ export async function reactToThanks({db,root,peer,input,reply,events,afterSeq,se
     sourceOrder[source(a)]-sourceOrder[source(b)]||
     history.lastIndexOf(a.path)-history.lastIndexOf(b.path)||
     (b.collectedAt??b.savedAt??0)-(a.collectedAt??a.savedAt??0));
-  let candidate=available.find(i=>!recent.includes(i.path))??available.find(i=>i.path!==state.lastPath);
+  let candidate=available.find(i=>!recent.includes(i.path))??available.find(i=>i.path!==state.lastPath)??(high?available[0]:undefined);
   // Compatibility for old isolated callers without a manifest; the live runtime
   // always supplies a verified per-user catalog, including an empty one.
   if(!candidate&&candidates===undefined&&!catalog.length&&root){
