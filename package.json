@@ -1,0 +1,19 @@
+{
+  "name": "dsh-wechat-assistant",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "description": "Windows personal assistant for DeepSeek Harness and WeChat",
+  "license": "MIT",
+  "scripts": {
+    "test": "node scripts/test-all.mjs",
+    "build": "node scripts/build-channel.mjs",
+    "test:portable": "node --test packages/wechat-channel/tests/chat-intent.node-test.mjs packages/wechat-channel/tests/meme-completion.node-test.mjs packages/wechat-channel/tests/usage-meter.node-test.mjs",
+    "verify": "python scripts/verify-distribution.py",
+    "test:foundation": "node --test packages/wechat-channel/tests/foundation.node-test.mjs packages/wechat-channel/tests/unified-tasks.node-test.mjs packages/wechat-channel/tests/control-panel.node-test.mjs",
+    "audit:local": "node scripts/capability-audit.mjs"
+  }
+}

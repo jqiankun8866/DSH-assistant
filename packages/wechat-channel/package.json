@@ -1,0 +1,42 @@
+{
+  "name": "@ox2g/dsh-plugin-wechat",
+  "version": "0.0.0",
+  "private": true,
+  "description": "DeepSeek Harness WeChat channel plugin (ilink bot gateway), built on the Tencent/openclaw-weixin protocol layer.",
+  "license": "MIT",
+  "type": "module",
+  "ilink_appid": "bot",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "login": "node lib-bin/login.js"
+  },
+  "optionalDependencies": {
+    "qrcode-terminal": "0.12.0",
+    "silk-wasm": "3.7.1"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-attachment": "*",
+    "@deepseek-ai/dsh-tools": "*",
+    "@deepseek-ai/cordis": "*",
+    "@deepseek-ai/schemastery": "*",
+    "@deepseek-ai/dsh-agent": "*",
+    "@deepseek-ai/dsh-llm": "*",
+    "@deepseek-ai/dsh-session": "*",
+    "@deepseek-ai/dsh-session-persistence": "*",
+    "@deepseek-ai/dsh-user-approval": "*",
+    "@deepseek-ai/dsh-user-questions": "*"
+  }
+}

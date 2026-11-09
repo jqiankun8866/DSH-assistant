@@ -1,0 +1,17 @@
+node_modules/
+__pycache__/
+*.pyc
+.env
+.env.*
+*.log
+runtime/
+dist/
+.assistant/
+.dsh/
+.dsh-plugin-wechat/
+*.sqlite*
+cookies*.json
+credentials*.json
+browser-profiles/
+windows-test-report.json
+mac-test-report.json

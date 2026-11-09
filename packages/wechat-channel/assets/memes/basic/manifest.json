@@ -1,0 +1,162 @@
+{
+  "id": "assistant-basic-v1",
+  "license": "CC-BY-4.0",
+  "source": "https://github.com/jdecked/twemoji/tree/v15.1.0",
+  "items": [
+    {
+      "id": "heart",
+      "title": "比心",
+      "tags": [
+        "比心",
+        "爱你",
+        "喜欢",
+        "谢谢",
+        "感谢"
+      ],
+      "file": "heart.png",
+      "url": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/72x72/2764.png",
+      "sha256": "68da7c6dc7d9c0456174f2575abe8f8abd52cde7a4017700579519173a8a4a34"
+    },
+    {
+      "id": "ok",
+      "title": "收到",
+      "tags": [
+        "收到",
+        "好的",
+        "ok",
+        "没问题",
+        "不客气"
+      ],
+      "file": "ok.png",
+      "url": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/72x72/1f44c.png",
+      "sha256": "0b94da70454fffda13f6062f51a6c4772c8854be2a963da23b4298c5fb11ef56"
+    },
+    {
+      "id": "thumbs-up",
+      "title": "点赞",
+      "tags": [
+        "点赞",
+        "厉害",
+        "干得好",
+        "加油"
+      ],
+      "file": "thumbs-up.png",
+      "url": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/72x72/1f44d.png",
+      "sha256": "42b43325b3edacba2a0e72b742bdc6fc5e4bc2ad38adca271fcc6d8353639887"
+    },
+    {
+      "id": "wave",
+      "title": "打招呼",
+      "tags": [
+        "你好",
+        "早上好",
+        "拜拜",
+        "打招呼"
+      ],
+      "file": "wave.png",
+      "url": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/72x72/1f44b.png",
+      "sha256": "dfee1561c6e59c90f7a292f90157bae85f75ccb3ae27b655898a51429e3a8910"
+    },
+    {
+      "id": "laugh",
+      "title": "笑哭",
+      "tags": [
+        "哈哈",
+        "笑死",
+        "笑哭",
+        "好笑"
+      ],
+      "file": "laugh.png",
+      "url": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/72x72/1f602.png",
+      "sha256": "c252a58367211c11d839155e50dc5e98551826c64b8d2e8d6267124c054ceae0"
+    },
+    {
+      "id": "happy",
+      "title": "开心",
+      "tags": [
+        "开心",
+        "高兴",
+        "快乐"
+      ],
+      "file": "happy.png",
+      "url": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/72x72/1f604.png",
+      "sha256": "ae89e05450587e8f1f4786c0d266cf94ef2b306782fb6f9c30e43c0023ed148b"
+    },
+    {
+      "id": "think",
+      "title": "思考",
+      "tags": [
+        "思考",
+        "疑问",
+        "疑惑",
+        "想想"
+      ],
+      "file": "think.png",
+      "url": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/72x72/1f914.png",
+      "sha256": "5116f7d07677f06785887c0af23c189b541a306d6b792d605ffaf3ed9f0e912d"
+    },
+    {
+      "id": "hug",
+      "title": "抱抱",
+      "tags": [
+        "抱抱",
+        "安慰",
+        "辛苦",
+        "温暖"
+      ],
+      "file": "hug.png",
+      "url": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/72x72/1f917.png",
+      "sha256": "75051001faed2bddddb6c9e67ee6b62f4f6e72395d2effcaa017bd4e6970b29f"
+    },
+    {
+      "id": "celebrate",
+      "title": "庆祝",
+      "tags": [
+        "庆祝",
+        "完成",
+        "成功",
+        "恭喜"
+      ],
+      "file": "celebrate.png",
+      "url": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/72x72/1f389.png",
+      "sha256": "7289a4aa98f9a81a1108f98abfcebd214dab96df64c8ea67ed6e83116a8e4ce8"
+    },
+    {
+      "id": "sleep",
+      "title": "晚安",
+      "tags": [
+        "晚安",
+        "睡觉",
+        "困了",
+        "休息"
+      ],
+      "file": "sleep.png",
+      "url": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/72x72/1f634.png",
+      "sha256": "2aeea8badccceed72027d37081ac75d81ced2932c382ed89527d427585081df7"
+    },
+    {
+      "id": "awkward",
+      "title": "尴尬",
+      "tags": [
+        "尴尬",
+        "汗",
+        "不好意思"
+      ],
+      "file": "awkward.png",
+      "url": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/72x72/1f605.png",
+      "sha256": "723bceeff120314bc0b84d09adc1fa250a25361d04ff700964fdee58819b20cd"
+    },
+    {
+      "id": "surprise",
+      "title": "惊讶",
+      "tags": [
+        "惊讶",
+        "震惊",
+        "哇"
+      ],
+      "file": "surprise.png",
+      "url": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/72x72/1f632.png",
+      "sha256": "488c8e360097e4d5240e3cc712abb1e6108eabac2aa37cf261444cdd83c1970a"
+    }
+  ]
+}

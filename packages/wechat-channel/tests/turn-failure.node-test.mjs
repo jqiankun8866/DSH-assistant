@@ -1,0 +1,7 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {assertTurnSucceeded,safeFailureReply,TurnFailure} from '../src/dsh/turn-failure.mjs';
+const event=(seq,error)=>({seq,type:'turn/end',data:{reason:{kind:'error',error}}});
+test('actual ACCOUNT_QUOTA 402 empty turn produces a safe user reply',()=>{let error;try{assertTurnSucceeded([event(2639,{message:'Insufficient Balance (request_id: private-id)',code:'ACCOUNT_QUOTA',status:402})],2631)}catch(e){error=e}assert.ok(error instanceof TurnFailure);assert.match(safeFailureReply(error),/余额或额度不足/);assert.doesNotMatch(safeFailureReply(error),/private-id|ACCOUNT_QUOTA/)});
+test('old errors and successful recovered turns do not trigger; current failures do',()=>{assert.doesNotThrow(()=>assertTurnSucceeded([event(1,{status:402})],1));assert.doesNotThrow(()=>assertTurnSucceeded([event(2,{status:402}),{seq:3,type:'turn/end',data:{reason:{kind:'completed'}}}],1));assert.throws(()=>assertTurnSucceeded([event(4,{status:503})],3),TurnFailure);assert.doesNotThrow(()=>assertTurnSucceeded([{seq:4,type:'turn/end',data:{reason:{kind:'cancelled'}}}],3))});
+test('transport failures map to fixed messages without exposing raw errors',()=>{for(const [input,pattern] of [[{status:401},/授权/],[{status:429},/请求过多/],[{status:503},/暂时不可用/],[new Error('fetch failed'),/网络/],[new Error('secret-token mailbox-path'),/没有完成/]]){const reply=safeFailureReply(input);assert.match(reply,pattern);assert.doesNotMatch(reply,/secret-token|mailbox-path/)} });

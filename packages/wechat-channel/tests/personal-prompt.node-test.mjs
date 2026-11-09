@@ -1,0 +1,36 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {mkdtempSync,rmSync} from 'node:fs';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
+import {AssistantService} from '../src/assistant/service.mjs';
+import {registerPersonalPrompt,personaPromptStatus} from '../src/assistant/personal-prompt.mjs';
+test('model prompt reads live panel settings each assembly, keeps literal braces and isolates peers',async t=>{
+ const root=mkdtempSync(join(tmpdir(),'persona-model-')),s=new AssistantService({root}),panel=new AssistantService({root});
+ t.after(async()=>{await panel.close();await s.close();rmSync(root,{recursive:true,force:true})});
+ let section;registerPersonalPrompt({section:x=>{section=x;return ()=>{}}},s,'weixin:a');
+ assert.equal(personaPromptStatus(s,'weixin:a').matchesCurrent,false);
+ panel.call('weixin:a','assistant_persona','update',{custom:'温柔一点，保留 {{昵称}} 字面文本'});
+ panel.call('weixin:a','assistant_profile','update',{nickname:'老大'});
+ assert.equal(section.interpolate,false);
+ assert.match(section.text(),/老大/);assert.match(section.text(),/保留 \{\{昵称\}\} 字面文本/);
+ assert.equal(personaPromptStatus(s,'weixin:a').matchesCurrent,true);
+ assert.doesNotMatch(personaPromptStatus(s,'weixin:b').text,/老大|保留 \{\{昵称\}\}/);
+ panel.call('weixin:a','assistant_persona','update',{custom:'简短，偶尔幽默'});
+ assert.equal(personaPromptStatus(s,'weixin:a').matchesCurrent,false);
+ assert.match(section.text(),/简短，偶尔幽默/);
+ assert.equal(personaPromptStatus(s,'weixin:a').matchesCurrent,true);
+});
+test('shared demographics update in place for all domains without exposing medical details',async t=>{
+ const root=mkdtempSync(join(tmpdir(),'shared-profile-')),s=new AssistantService({root});
+ t.after(async()=>{await s.close();rmSync(root,{recursive:true,force:true})});
+ const save={record:{heightCm:170,weightKg:60,bloodType:'A',notes:'健康隐私'},source:'本人',confirmed:true};
+ const before=s.call('weixin:a','assistant_health','save_demographics',save).entry;
+ assert.equal(s.call('weixin:a','assistant_dossier','profile').profile.heightCm,170);
+ assert.equal(s.call('weixin:a','assistant_dossier','profile').profile.bloodType,undefined);
+ assert.equal(s.call('weixin:b','assistant_dossier','profile').profile,null);
+ s.call('weixin:a','assistant_health','save_demographics',{...save,expected:before,record:{...before.record,weightKg:61}});
+ assert.equal(s.call('weixin:a','assistant_dossier','profile').profile.weightKg,61);
+ assert.equal(s.call('weixin:a','assistant_health','chart').profile.record.weightKg,61);
+ assert.throws(()=>s.call('weixin:a','assistant_dossier','create',{key:'medical-fake',value:'x',category:'health',source:'本人',confirmed:true}));
+});
